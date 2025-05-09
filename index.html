@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anowar Hossain - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-blue-300 min-h-screen relative overflow-x-hidden">
+    <!-- Background Bubbles -->
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+    <div class="bubble absolute rounded-full animate-move"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-10 backdrop-blur-md shadow-lg z-50">
+        <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+            <div class="text-3xl font-extrabold text-gray-800 tracking-tight">Anowar Hossain</div>
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-800 focus:outline-none hover:text-blue-600 transition">
+                    <i class="fas fa-bars text-3xl"></i>
+                </button>
+            </div>
+            <ul id="nav-links" class="hidden md:flex space-x-8">
+                <li><a href="#home" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Home</a></li>
+                <li><a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">About</a></li>
+                <li><a href="#skills" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Skills</a></li>
+                <li><a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Projects</a></li>
+                <li><a href="#experience" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Experience</a></li>
+                <li><a href="#testimonials" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Blog</a></li>
+                <li><a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium relative transition" data-active="false">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-24 pb-16 flex items-center justify-center section min-h-[60vh]">
+        <div class="text-center px-4">
+            <img src="assets/anowar.jpg" alt="Anowar Hossain" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Hi, I'm Anowar Hossain</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-6">Web Developer | AI Enthusiast | Crafting Scalable Solutions</p>
+            <div class="flex justify-center space-x-4">
+                <a href="resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Download Resume</a>
+                <a href="#contact" class="bg-purple-700 text-white px-6 py-3 rounded-lg hover:bg-purple-800 transition">Get in Touch 🚀</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4 bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-8 max-w-2xl flex items-center transform hover:scale-105 transition">
+            <img src="assets/anowar.jpg" alt="Anowar Hossain" class="w-40 h-40 rounded-full mr-8 object-cover">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">About Me</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    I'm Anowar Hossain, a web developer from Bangladesh with a passion for building user-friendly, scalable applications. Currently mastering front-end technologies like React and Tailwind CSS, and diving into back-end with Node.js and databases. My goal is to integrate AI-driven features into web apps, creating smart solutions like chatbots and recommendation systems. Let's connect to build something amazing!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Progress Bars -->
+    <section id="skills" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Front-End</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li>
+                            HTML5
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            CSS & Tailwind
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            JavaScript
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            React.js
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Back-End</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li>
+                            Node.js
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            MongoDB
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            REST APIs
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">AI & DevOps</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li>
+                            OpenAI API
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Docker
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            CI/CD
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Projects</h2>
+            <div class="flex justify-center mb-6 space-x-4">
+                <button class="filter-btn bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition active" data-category="all">All</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition" data-category="front-end">Front-End</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition" data-category="full-stack">Full-Stack</button>
+                <button class="filter-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition" data-category="ai">AI</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="project-grid">
+                <div class="project bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition" data-category="front-end">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Personal Portfolio</h3>
+                    <p class="text-gray-600 mb-4">A responsive portfolio website built with React and Tailwind CSS, showcasing my skills and projects.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Live Demo</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900">GitHub</a>
+                    </div>
+                </div>
+                <div class="project bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition" data-category="full-stack">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">E-Commerce Platform</h3>
+                    <p class="text-gray-600 mb-4">A full-stack e-commerce app built with React, Node.js, and MongoDB, featuring user authentication and payment integration.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Live Demo</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900">GitHub</a>
+                    </div>
+                </div>
+                <div class="project bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition" data-category="ai">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">AI Chatbot</h3>
+                    <p class="text-gray-600 mb-4">An AI-powered chatbot using OpenAI API, integrated into a React app for real-time user interaction.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Live Demo</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900">GitHub</a>
+                    </div>
+                </div>
+                <div class="project bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition" data-category="full-stack">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
+                    <p class="text-gray-600 mb-4">A full-stack task management application built with React, Node.js, and PostgreSQL, featuring real-time updates and user roles.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Live Demo</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Experience</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gray-800">Frontend Developer</h3>
+                    <p class="text-gray-600">Tech Solutions Ltd, 2022 - Present</p>
+                    <ul class="text-gray-600 list-disc list-inside mt-2">
+                        <li>Developed responsive web applications using React and Tailwind CSS.</li>
+                        <li>Optimized website performance, reducing load times by 30%.</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 transform hover:scale-105 transition">
+                    <h3 class="text-xl font-semibold text-gray-800">Freelance Web Developer</h3>
+                    <p class="text-gray-600">2019 - 2022</p>
+                    <ul class="text-gray-600 list-disc list-inside mt-2">
+                        <li>Built custom websites for small businesses using HTML, CSS, and JavaScript.</li>
+                        <li>Integrated APIs for enhanced functionality, including payment gateways.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Carousel -->
+    <section id="testimonials" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Testimonials</h2>
+            <div id="testimonial-carousel" class="relative">
+                <div class="carousel-item bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 mx-auto max-w-lg transform hover:scale-105 transition">
+                    <p class="text-gray-600 italic">"Anowar delivered an outstanding website for our business. His attention to detail and responsiveness made the process seamless."</p>
+                    <p class="text-gray-800 font-semibold mt-4">- Hanoi, CEO</p>
+                </div>
+                <div class="carousel-item bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 mx-auto max-w-lg hidden transform hover:scale-105 transition">
+                    <p class="text-gray-600 italic">"Working with Anowar was a pleasure. His technical expertise and creativity brought our vision to life."</p>
+                    <p class="text-gray-800 font-semibold mt-4">- Jane Smith, Marketing Director</p>
+                </div>
+                <div class="carousel-item bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 mx-auto max-w-lg hidden transform hover:scale-105 transition">
+                    <p class="text-gray-600 italic">"Anowar's dedication and skill in web development exceeded our expectations. Highly recommend!"</p>
+                    <p class="text-gray-800 font-semibold mt-4">- Michael Brown, CTO</p>
+                </div>
+                <button id="prev-testimonial" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-blue-600"><i class="fas fa-chevron-left text-2xl"></i></button>
+                <button id="next-testimonial" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-blue-600"><i class="fas fa-chevron-right text-2xl"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Blog</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 flex transform hover:scale-105 transition">
+                    <div class="w-24 h-24 bg-gray-200 rounded-lg mr-4 flex-shrink-0"></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Getting Started with React Hooks</h3>
+                        <p class="text-gray-600">A beginner's guide to using React Hooks for state management and side effects.</p>
+                        <a href="#" class="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-xl shadow-lg p-6 flex transform hover:scale-105 transition">
+                    <div class="w-24 h-24 bg-gray-200 rounded-lg mr-4 flex-shrink-0"></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Building Scalable APIs with Node.js</h3>
+                        <p class="text-gray-600">Learn how to create robust REST APIs using Node.js and Express.</p>
+                        <a href="#" class="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 flex items-center justify-center section min-h-[50vh]">
+        <div class="container mx-auto px-4 bg-gradient-to-r from-blue-100 to-blue-300 bg-opacity-90 rounded-2xl shadow-xl p-10 max-w-lg transform hover:scale-105 transition">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Let's Connect!</h2>
+            <form id="contact-form" action="https://formspree.io/f/xdkkqeea" method="post" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                    <input name="name" id="name" type="text" placeholder="Enter your name" class="w-full p-4 rounded-xl bg-white bg-opacity-50 border border-gray-200 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300">
+                    <p class="text-red-600 text-sm hidden mt-1" id="name-error">Name is required.</p>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                    <input name="email" id="email" type="email" placeholder="Enter your email" class="w-full p-4 rounded-xl bg-white bg-opacity-50 border border-gray-200 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300">
+                    <p class="text-red-600 text-sm hidden mt-1" id="email-error">Valid email is required.</p>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Your Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Write your message..." class="w-full p-4 rounded-xl bg-white bg-opacity-50 border border-gray-200 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300"></textarea>
+                    <p class="text-red-600 text-sm hidden mt-1" id="message-error">Message is required.</p>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-700 text-white p-4 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-800 transition-all duration-300 flex items-center justify-center">
+                    Send Message <i class="fas fa-rocket ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Left: About -->
+                <div class="text-left">
+                    <h3 class="text-2xl font-bold mb-4">Anowar Hossain</h3>
+                    <p class="text-gray-300 mb-4">Passionate web developer and AI enthusiast dedicated to crafting innovative, scalable solutions for the digital world.</p>
+                    <p class="text-gray-400">© 2025 Anowar Hossain. All rights reserved.</p>
+                </div>
+                <!-- Center: Navigation -->
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold mb-4">Explore</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+                        <li><a href="#blog" class="hover:text-blue-400 transition">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Right: Connect -->
+                <div class="text-right">
+                    <h3 class="text-xl font-semibold mb-4">Connect</h3>
+                    <div class="flex justify-end space-x-6 mb-4">
+                        <a href="https://github.com/AnowarOHossain" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/anowarohossain/" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="https://dev.to/anowarohossain" class="text-gray-300 hover:text-blue-400 transition"><i class="fab fa-dev text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition opacity-0">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93d24c20adf1bfac',t:'MTc0NjgwNTI0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

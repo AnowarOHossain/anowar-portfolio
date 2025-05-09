@@ -1,0 +1,326 @@
+/* Base Styles */
+body {
+    max-height: 100vh; /* Prevent excessive page height */
+    overflow-x: hidden; /* Clip horizontal overflow */
+    overflow-y: auto; /* Allow vertical scrolling for content */
+}
+
+/* Base Bubble Styles */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    animation: move infinite ease-in-out;
+}
+
+/* Distributed Bubbles (16 total) */
+.bubble:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 0%;
+    top: 20%;
+    background-color: #ffff00; /* Neon Yellow */
+    animation-duration: 3.6s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(2) {
+    width: 85px;
+    height: 85px;
+    right: 0%;
+    top: 30%;
+    background-color: #00b7eb; /* Bright Blue */
+    animation-duration: 4.3s;
+    animation-delay: 3.5s;
+}
+
+.bubble:nth-child(3) {
+    width: 95px;
+    height: 95px;
+    left: 5%;
+    top: 40%;
+    background-color: #00ff00; /* Lime Green */
+    animation-duration: 3.9s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    width: 75px;
+    height: 75px;
+    right: 5%;
+    top: 50%;
+    background-color: #ff00ff; /* Hot Magenta */
+    animation-duration: 4.5s;
+    animation-delay: 4.5s;
+}
+
+.bubble:nth-child(5) {
+    width: 105px;
+    height: 105px;
+    left: 10%;
+    top: 60%;
+    background-color: #ff1493; /* Vivid Pink */
+    animation-duration: 3.7s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(6) {
+    width: 65px;
+    height: 65px;
+    right: 10%;
+    top: 70%;
+    background-color: #ffff00; /* Neon Yellow */
+    animation-duration: 4.2s;
+    animation-delay: 5.5s;
+}
+
+.bubble:nth-child(7) {
+    width: 130px;
+    height: 130px;
+    left: 0%;
+    top: 80%;
+    background-color: #00b7eb; /* Bright Blue */
+    animation-duration: 3.3s;
+    animation-delay: 6s;
+}
+
+.bubble:nth-child(8) {
+    width: 55px;
+    height: 55px;
+    right: 0%;
+    top: 90%;
+    background-color: #00ff00; /* Lime Green */
+    animation-duration: 4.4s;
+    animation-delay: 6.5s;
+}
+
+.bubble:nth-child(9) {
+    width: 115px;
+    height: 115px;
+    left: 5%;
+    top: 100%;
+    background-color: #ff00ff; /* Hot Magenta */
+    animation-duration: 3.8s;
+    animation-delay: 7s;
+}
+
+.bubble:nth-child(10) {
+    width: 45px;
+    height: 45px;
+    right: 5%;
+    top: 110%;
+    background-color: #ff1493; /* Vivid Pink */
+    animation-duration: 4.6s;
+    animation-delay: 7.5s;
+}
+
+.bubble:nth-child(11) {
+    width: 150px;
+    height: 150px;
+    left: 10%;
+    top: 120%;
+    background-color: #ffff00; /* Neon Yellow */
+    animation-duration: 3.7s;
+    animation-delay: 8s;
+}
+
+.bubble:nth-child(12) {
+    width: 90px;
+    height: 90px;
+    right: 10%;
+    top: 130%;
+    background-color: #00b7eb; /* Bright Blue */
+    animation-duration: 4.8s;
+    animation-delay: 8.5s;
+}
+
+.bubble:nth-child(13) {
+    width: 100px;
+    height: 100px;
+    left: 0%;
+    top: 140%;
+    background-color: #00ff00; /* Lime Green */
+    animation-duration: 4.0s;
+    animation-delay: 9s;
+}
+
+.bubble:nth-child(14) {
+    width: 80px;
+    height: 80px;
+    right: 0%;
+    top: 150%;
+    background-color: #ff00ff; /* Hot Magenta */
+    animation-duration: 3.5s;
+    animation-delay: 9.5s;
+}
+
+.bubble:nth-child(15) {
+    width: 90px;
+    height: 90px;
+    left: 5%;
+    top: 160%;
+    background-color: #ff1493; /* Vivid Pink */
+    animation-duration: 4.1s;
+    animation-delay: 10s;
+}
+
+.bubble:nth-child(16) {
+    width: 120px;
+    height: 120px;
+    right: 5%;
+    top: 170%;
+    background-color: #ffff00; /* Neon Yellow */
+    animation-duration: 3.6s;
+    animation-delay: 10.5s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(15px, -40px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Section Animation */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project Filter Active State */
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Ensure sections have consistent spacing */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Contact Form Specific Styles */
+#contact-form input,
+#contact-form textarea {
+    transition: all 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+#contact-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Navbar Specific Styles */
+nav {
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* Hover Underline Animation for Desktop */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Link Styling */
+.nav-link[data-active="true"] {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.nav-link[data-active="true"]::after {
+    width: 100%;
+}
+
+/* Hamburger Icon Animation */
+#hamburger i {
+    transition: transform 0.3s ease;
+}
+
+#hamburger.active i.fa-bars {
+    transform: rotate(45deg);
+}
+
+#hamburger.active i.fa-times {
+    transform: rotate(0deg);
+}
+
+/* Mobile Menu Styling */
+#nav-links {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+    #nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    #nav-links:not(.hidden) {
+        transform: translateX(0);
+    }
+
+    #nav-links li {
+        margin: 1rem 0;
+    }
+
+    #nav-links a {
+        font-size: 1.5rem;
+        color: #1f2937;
+        padding: 0.5rem 1rem;
+    }
+
+    #nav-links a:hover {
+        color: #2563eb;
+    }
+
+    #nav-links a::after {
+        display: none; /* Disable underline animation on mobile */
+    }
+}
